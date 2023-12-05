@@ -540,28 +540,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.h-52 {
-  height: 13rem;
-}
-
-.w-52 {
-  width: 13rem;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.bg-orange-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
-}
-
 .bg-orange-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 215 170 / var(--tw-bg-opacity));
-}
-
-.text-center {
-  text-align: center;
 }
