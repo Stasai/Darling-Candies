@@ -4,8 +4,7 @@
   "description": "Small project to practice skills with HTML and CSS",
   "main": "tailwind.config.js",
   "scripts": {
-    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/styles.css --watch",
-    "prettier": "npx prettier --write **/*.html"
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/styles.css --watch"
   },
   "keywords": [],
   "author": "",
