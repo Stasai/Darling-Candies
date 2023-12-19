@@ -6,6 +6,9 @@ module.exports = {
       backgroundImage: {
         'hero-image': "url('/build/img/candy-hero.jpg')",
       },
+      fontFamily : {
+        'mukta': ['Mukta', 'sans-serif']
+      },
     },
   },
   plugins: [],
