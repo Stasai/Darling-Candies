@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap')
-
 .border-debug {
     border: solid;
     --tw-border-opacity: 1;
     border-color: rgb(220 38 38 / var(--tw-border-opacity));
     border-width: 2px;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap')
