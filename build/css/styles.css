@@ -586,6 +586,10 @@ video {
   z-index: 10;
 }
 
+.float-right {
+  float: right;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -604,6 +608,10 @@ video {
 .my-7 {
   margin-top: 1.75rem;
   margin-bottom: 1.75rem;
+}
+
+.ml-20 {
+  margin-left: 5rem;
 }
 
 .ml-4 {
@@ -640,14 +648,6 @@ video {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.ml-16 {
-  margin-left: 4rem;
-}
-
-.ml-20 {
-  margin-left: 5rem;
 }
 
 .flex {
@@ -702,16 +702,40 @@ video {
   height: 100%;
 }
 
+.h-36 {
+  height: 9rem;
+}
+
+.h-\[100\%\] {
+  height: 100%;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.h-\[500px\] {
+  height: 500px;
+}
+
+.h-\[700px\] {
+  height: 700px;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-7 {
+  height: 1.75rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
 
 .w-12 {
   width: 3rem;
-}
-
-.w-52 {
-  width: 13rem;
 }
 
 .w-64 {
@@ -738,8 +762,28 @@ video {
   width: 100%;
 }
 
-.w-\[70\%\] {
-  width: 70%;
+.w-\[10\%\] {
+  width: 10%;
+}
+
+.w-\[15\%\] {
+  width: 15%;
+}
+
+.w-\[23\%\] {
+  width: 23%;
+}
+
+.w-\[21\%\] {
+  width: 21%;
+}
+
+.w-\[79\%\] {
+  width: 79%;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .cursor-pointer {
@@ -750,8 +794,16 @@ video {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-4 {
+  grid-template-rows: repeat(4, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -764,6 +816,10 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.place-content-center {
+  place-content: center;
 }
 
 .place-items-center {
@@ -881,6 +937,16 @@ video {
   background-color: transparent;
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-slate-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-20 {
   --tw-bg-opacity: 0.2;
 }
@@ -971,6 +1037,11 @@ video {
   background-repeat: no-repeat;
 }
 
+.object-right {
+  -o-object-position: right;
+     object-position: right;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -981,6 +1052,18 @@ video {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-10 {
