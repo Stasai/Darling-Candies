@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.border-debug {
+.debug {
     border: solid;
     --tw-border-opacity: 1;
     border-color: rgb(220 38 38 / var(--tw-border-opacity));
