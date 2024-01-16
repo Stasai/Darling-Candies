@@ -586,10 +586,6 @@ video {
   z-index: 10;
 }
 
-.row-auto {
-  grid-row: auto;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -662,10 +658,6 @@ video {
   height: 5rem;
 }
 
-.h-28 {
-  height: 7rem;
-}
-
 .h-64 {
   height: 16rem;
 }
@@ -706,63 +698,16 @@ video {
   height: 100%;
 }
 
-.h-\[5\%\] {
-  height: 5%;
-}
-
-.h-\[15\%\] {
-  height: 15%;
-}
-
-.h-\[30\%\] {
-  height: 30%;
-}
-
-.h-\[70\%\] {
-  height: 70%;
-}
-
-.h-\[150\%\] {
-  height: 150%;
-}
-
-.h-\[350\%\] {
-  height: 350%;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
-.h-min {
-  height: -moz-min-content;
-  height: min-content;
-}
-
-.h-max {
-  height: -moz-max-content;
-  height: max-content;
-}
-
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.max-h-48 {
-  max-height: 12rem;
-}
-
-.max-h-full {
-  max-height: 100%;
-}
-
-.min-h-screen {
-  min-height: 100vh;
+.h-24 {
+  height: 6rem;
 }
 
 .min-h-full {
   min-height: 100%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-12 {
@@ -809,32 +754,12 @@ video {
   cursor: pointer;
 }
 
-.grid-flow-row {
-  grid-auto-flow: row;
+.auto-rows-auto {
+  grid-auto-rows: auto;
 }
 
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
-.grid-cols-auto-fill-100 {
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-}
-
-.grid-cols-\[repeat\(auto-fit\2c minmax\(278px\2c 1fr\)\)\] {
-  grid-template-columns: repeat(auto-fit,minmax(278px,1fr));
-}
-
-.grid-cols-\[repeat\(auto-fill\2c minmax\(278px\2c 1fr\)\)\] {
-  grid-template-columns: repeat(auto-fill,minmax(278px,1fr));
-}
-
-.grid-cols-\[repeat\(auto-fill\2c minmax\(256px\2c 1fr\)\)\] {
-  grid-template-columns: repeat(auto-fill,minmax(256px,1fr));
-}
-
-.grid-cols-\[repeat\(auto-fill\2c minmax\(214px\2c 1fr\)\)\] {
-  grid-template-columns: repeat(auto-fill,minmax(214px,1fr));
 }
 
 .grid-cols-\[repeat\(auto-fill\2c minmax\(218px\2c 1fr\)\)\] {
@@ -843,14 +768,6 @@ video {
 
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
-}
-
-.grid-rows-\[repeat\(auto-fill\2c minmax\(80px\2c 1fr\)\)\] {
-  grid-template-rows: repeat(auto-fill,minmax(80px,1fr));
-}
-
-.grid-rows-\[repeat\(4\2c minmax\(0\2c 1fr\)\)\] {
-  grid-template-rows: repeat(4,minmax(0,1fr));
 }
 
 .flex-row {
