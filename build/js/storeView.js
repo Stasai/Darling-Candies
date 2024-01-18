@@ -167,51 +167,76 @@ const candyFlavors = [
     ]
 ];
 
+const candyPrices = [
+    2.99,
+    1.99,
+    3.39,
+    2.99,
+    2.59,
+    2.99,
+    4.99,
+    2.29,
+    2.19,
+    1.49,
+    3.99,
+    3.79,
+    2.59,
+    0.69,
+    2.29,
+    1.99
+]
+
 var isRefreshing = false;
 
 function changeList(index) {
     var targetList = document.querySelector('#flavor-list');
     targetList.innerHTML = '';
-  
+
     var clickedArray = candyFlavors[index];
-  
-    clickedArray.forEach(function (item, i) {
-      var newListItem = document.createElement('li');
-      newListItem.textContent = item;
-      newListItem.id = 'flavor' + (i + 1);
-      newListItem.className = 'bg-orange-200 rounded-md w-full h-24';
-      targetList.appendChild(newListItem);
+    var candyPrice = candyPrices[index];
+
+    clickedArray.forEach(function (flavor, i) {
+        var newListItem = document.createElement('li');
+        newListItem.className = 'bg-orange-200 rounded-md w-full h-16 pt-4 text-center text-2xl';
+
+        // Flavor with price
+        var flavorWithPrice = '$' + candyPrice.toFixed(2) + ' - ' + flavor;
+
+        // Set text content to include flavor and price
+        newListItem.textContent = flavorWithPrice;
+
+        newListItem.id = 'flavor' + (i + 1);
+        targetList.appendChild(newListItem);
     });
-  
+
     // Save the current index to localStorage
     localStorage.setItem('currentViewIndex', index);
-  }
-  
-  // Function to clear the saved index when the window is closed
-  function clearLocalStorage() {
+}
+
+// Function to clear the saved index when the window is closed
+function clearLocalStorage() {
     if (!isRefreshing) {
-      localStorage.removeItem('currentViewIndex');
+        localStorage.removeItem('currentViewIndex');
     }
-  }
-  
-  // Set the default view to "Lollipops" or retrieve from localStorage
-  var defaultIndex = localStorage.getItem('currentViewIndex') || 0;
-  changeList(defaultIndex);
-  
-  // Add click event listeners to each item in the first list
-  for (var i = 1; i <= 16; i++) {
+}
+
+// Set the default view to "Lollipops" or retrieve from localStorage
+var defaultIndex = localStorage.getItem('currentViewIndex') || 0;
+changeList(defaultIndex);
+
+// Add click event listeners to each item in the first list
+for (var i = 1; i <= 16; i++) {
     var listItem = document.querySelector('#candy' + i);
     listItem.addEventListener('click', function () {
-      var index = parseInt(this.id.slice(5)) - 1;
-      changeList(index);
+        var index = parseInt(this.id.slice(5)) - 1;
+        changeList(index);
     });
-  }
-  
-  // Add event listener for unload to set the isRefreshing flag
-  window.addEventListener('beforeunload', function () {
+}
+
+// Add event listener for unload to set the isRefreshing flag
+window.addEventListener('beforeunload', function () {
     isRefreshing = true;
-  });
-  
-  // Add event listener for unload to clear localStorage
-  window.addEventListener('unload', clearLocalStorage);
-  
+});
+
+// Add event listener for unload to clear localStorage
+window.addEventListener('unload', clearLocalStorage);
