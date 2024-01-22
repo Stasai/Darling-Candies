@@ -11,7 +11,7 @@ module.exports = {
         'hero-image': "url('/build/img/candy-hero.jpg')",
       },
       fontFamily : {
-        'mukta': ['Mukta', 'sans-serif']
+        'cabin': ['Cabin', 'sans-serif']
       },
       gridTemplateColumns: {
         'auto-fill-100': 'repeat(auto-fill, minmax(100px, 1fr))',
