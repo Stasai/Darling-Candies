@@ -863,6 +863,11 @@ select {
   margin-bottom: 1.75rem;
 }
 
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
 .ml-4 {
   margin-left: 1rem;
 }
@@ -1041,6 +1046,46 @@ select {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[10\%\] {
+  width: 10%;
+}
+
+.w-\[20\%\] {
+  width: 20%;
+}
+
+.w-\[25\%\] {
+  width: 25%;
+}
+
+.w-\[30\%\] {
+  width: 30%;
+}
+
+.w-\[40\%\] {
+  width: 40%;
+}
+
+.w-\[22\%\] {
+  width: 22%;
+}
+
+.w-\[23\%\] {
+  width: 23%;
+}
+
+.w-\[24\%\] {
+  width: 24%;
+}
+
+.w-\[22\.5\%\] {
+  width: 22.5%;
+}
+
+.w-\[22\.7\%\] {
+  width: 22.7%;
 }
 
 .cursor-pointer {
@@ -1392,6 +1437,10 @@ select {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-left {
