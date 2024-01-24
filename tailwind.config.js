@@ -7,9 +7,6 @@ module.exports = {
   mode: 'jit',
   theme: {
     extend: {
-      backgroundImage: {
-        'hero-image': "url('/build/img/candy-hero.jpg')",
-      },
       fontFamily : {
         'cabin': ['Cabin', 'sans-serif']
       },
