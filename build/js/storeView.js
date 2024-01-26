@@ -197,7 +197,7 @@ function changeList(index) {
 
     clickedArray.forEach(function (flavor, i) {
         var newListItem = document.createElement('li');
-        newListItem.className = 'bg-orange-200 rounded-md w-full h-16 pt-4 text-center text-2xl';
+        newListItem.className = 'bg-orange-200 font-semibold rounded-md w-full h-32 pt-4 px-3 text-center text-2xl';
 
         // Flavor with price
         var flavorWithPrice = '$' + candyPrice.toFixed(2) + ' - ' + flavor;
