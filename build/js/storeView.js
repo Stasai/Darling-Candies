@@ -168,22 +168,47 @@ const candyFlavors = [
 ];
 
 const candyPrices = [
-    2.99,
-    1.99,
-    3.39,
-    2.99,
-    2.59,
-    2.99,
-    4.99,
-    2.29,
-    2.19,
-    1.49,
-    3.99,
-    3.79,
-    2.59,
-    0.69,
-    2.29,
-    1.99
+    2.99, 1.99, 3.39, 2.99, 2.59, 2.99,
+    4.99, 2.29, 2.19, 1.49, 3.99,
+    3.79, 2.59, 0.69, 2.29, 1.99
+]
+
+const candyNames = [
+    "Lollipop",
+    "Cotton Candy",
+    "Chocolate",
+    "Licorice",
+    "Taffy",
+    "Rock Candy",
+    "Caramel",
+    "Gummies",
+    "Mint",
+    "Chewing Gum",
+    "Toffee",
+    "Seasonal",
+    "Sour Candy",
+    "Jelly Beans",
+    "Candy Straw",
+    "Marshmallow"
+]
+
+const candyImages = [
+    "img/header-lollipop.jpg",
+    "img/placeholder.png",
+    "img/placeholder.png",
+    "img/placeholder.png",
+    "img/placeholder.png",
+    "img/placeholder.png",
+    "img/placeholder.png",
+    "img/placeholder.png",
+    "img/placeholder.png",
+    "img/placeholder.png",
+    "img/placeholder.png",
+    "img/placeholder.png",
+    "img/placeholder.png",
+    "img/placeholder.png",
+    "img/placeholder.png",
+    "img/placeholder.png",
 ]
 
 var isRefreshing = false;
@@ -208,6 +233,15 @@ function changeList(index) {
         newListItem.id = 'flavor' + (i + 1);
         targetList.appendChild(newListItem);
     });
+
+    // Update the image and text above the flavors
+    var candyImage = document.getElementById('candyImage');
+    var candyName = document.getElementById('candyName');
+    var candyImageSrc = candyImages[index];
+
+    candyImage.src = candyImageSrc;
+    candyImage.alt = 'Image of ' + candyNames[index];
+    candyName.textContent = candyNames[index];
 
     // Save the current index to localStorage
     localStorage.setItem('currentViewIndex', index);
