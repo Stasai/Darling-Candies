@@ -991,64 +991,12 @@ select {
   height: 100%;
 }
 
-.max-h-full {
-  max-height: 100%;
-}
-
-.min-h-\[75\.4\%\] {
-  min-height: 75.4%;
-}
-
-.min-h-screen {
-  min-height: 100vh;
-}
-
-.min-h-\[72\.4\%\] {
-  min-height: 72.4%;
-}
-
-.min-h-\[73\%\] {
-  min-height: 73%;
-}
-
-.min-h-\[72\.8\%\] {
-  min-height: 72.8%;
-}
-
 .min-h-\[72\.9\%\] {
   min-height: 72.9%;
 }
 
-.min-h-\[74\.9\%\] {
-  min-height: 74.9%;
-}
-
-.min-h-\[75\.9\%\] {
-  min-height: 75.9%;
-}
-
-.min-h-\[75\.2\%\] {
-  min-height: 75.2%;
-}
-
-.min-h-\[75\.3\%\] {
-  min-height: 75.3%;
-}
-
-.min-h-\[75\.5\%\] {
-  min-height: 75.5%;
-}
-
-.min-h-full {
-  min-height: 100%;
-}
-
-.min-h-\[73\.4\%\] {
-  min-height: 73.4%;
-}
-
-.min-h-\[72\.5\%\] {
-  min-height: 72.5%;
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-1\/2 {
@@ -1109,20 +1057,6 @@ select {
 
 .w-full {
   width: 100%;
-}
-
-.max-w-full {
-  max-width: 100%;
-}
-
-.translate-x-\[-1\/2\] {
-  --tw-translate-x: -1/2;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-\[-1\/2\] {
-  --tw-translate-y: -1/2;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .-translate-x-1\/2 {
@@ -1267,11 +1201,6 @@ select {
   background-color: transparent;
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-20 {
   --tw-bg-opacity: 0.2;
 }
@@ -1358,19 +1287,13 @@ select {
   background-repeat: no-repeat;
 }
 
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.object-fill {
-  -o-object-fit: fill;
-     object-fit: fill;
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-4 {
@@ -1379,10 +1302,6 @@ select {
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .px-10 {
@@ -1551,11 +1470,6 @@ select {
 .text-slate-200 {
   --tw-text-opacity: 1;
   color: rgb(226 232 240 / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .no-underline {
