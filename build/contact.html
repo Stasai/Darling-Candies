@@ -52,19 +52,21 @@
         </div>
         <!-- form -->
         <div class="w-[70%] h-[648px] mx-auto bg-orange-300 ring-orange-400 ring-2 rounded-md mt-4 shadow-lg">
-          <form class="flex flex-col justify-center w-[45%] h-full p-4 mx-auto">
+          <form action="https://api.sheetmonkey.io/form/sk8pg1y6zjeHqnM7EqTmcg" method="POST" onsubmit="addTimestamp()"
+            class="flex flex-col justify-center w-[45%] h-full p-4 mx-auto">
             <!-- Name -->
-            <label for="name" class="font-semibold">Name</label>
-            <input type="text" placeholder="Name" id="name" name="name"
+            <label for="Name" class="font-semibold">Name</label>
+            <input required type="text" placeholder="John Doe" id="name" name="Name"
               class="form-input rounded-md bg-orange-100 ring-orange-400 ring-2">
             <!-- Email -->
-            <label for="email" class="font-semibold mt-4">Email</label>
-            <input type="email" placeholder="Email" name="email" id="email"
+            <label for="Email" class="font-semibold mt-4">Email</label>
+            <input required type="email" placeholder="example@email.com" name="Email" id="email"
               class="form-input rounded-md bg-orange-100 ring-orange-400 ring-2">
             <!-- Question/Feedback -->
-            <label for="message" class="font-semibold mt-4">Question/Feedback</label>
-            <textarea name="message" placeholder="Your question or feedback here" id="message" cols="10" rows="10"
-              class="h-96 rounded-md bg-orange-100 ring-orange-400 ring-2 form-textarea"></textarea>
+            <label for="Message" class="font-semibold mt-4">Question/Feedback</label>
+            <textarea required name="Message" placeholder="Your question or feedback here" id="message" cols="10" rows="10" class="h-96 rounded-md bg-orange-100 ring-orange-400 ring-2 form-textarea"></textarea>
+            <!-- Timestamp -->
+            <input type="hidden" id="Timestamp" name="Timestamp">
             <!-- Submit (nonfunctional)-->
             <input type="submit" value="Submit"
               class="font-semibold bg-orange-200 ring-orange-400 ring-2 rounded-md mt-4 w-24 py-1 transform transition-transform hover:scale-105">
@@ -86,6 +88,7 @@
       </script>
     </p>
   </footer>
+  <script src="js/timestamp.js"></script>
 </body>
 
 </html>
