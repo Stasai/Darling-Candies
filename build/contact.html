@@ -52,7 +52,7 @@
         </div>
         <!-- form -->
         <div class="w-[70%] h-[648px] mx-auto bg-orange-300 ring-orange-400 ring-2 rounded-md mt-4 shadow-lg">
-          <form action="https://api.sheetmonkey.io/form/sk8pg1y6zjeHqnM7EqTmcg" method="POST" onsubmit="addTimestamp()"
+          <form id="contactForm" action="https://api.sheetmonkey.io/form/sk8pg1y6zjeHqnM7EqTmcg" method="POST" onsubmit=""
             class="flex flex-col justify-center w-[45%] h-full p-4 mx-auto">
             <!-- Name -->
             <label for="Name" class="font-semibold">Name</label>
@@ -64,12 +64,16 @@
               class="form-input rounded-md bg-orange-100 ring-orange-400 ring-2">
             <!-- Question/Feedback -->
             <label for="Message" class="font-semibold mt-4">Question/Feedback</label>
-            <textarea required name="Message" placeholder="Your question or feedback here" id="message" cols="10" rows="10" class="h-96 rounded-md bg-orange-100 ring-orange-400 ring-2 form-textarea"></textarea>
+            <textarea required name="Message" placeholder="Your question or feedback here" id="message" cols="10"
+              rows="10" class="h-96 rounded-md bg-orange-100 ring-orange-400 ring-2 form-textarea"></textarea>
             <!-- Timestamp -->
-            <input type="hidden" id="Timestamp" name="Timestamp">
+            <input type="hidden" id="Timestamp" name="Timestamp" value="x-sheetmonkey-current-date-time">
             <!-- Submit -->
-            <input type="submit" value="Submit"
-              class="font-semibold bg-orange-200 ring-orange-400 ring-2 rounded-md mt-4 w-24 py-1 transform transition-transform hover:scale-105">
+            <div class="flex flex-row">
+              <input type="submit" value="Submit"
+                class="font-semibold bg-orange-200 ring-orange-400 ring-2 rounded-md mt-4 w-24 py-1 transform transition-transform hover:scale-105 hover:bg-amber-500">
+              <p id="resultMessage" class="text-xl mt-[18px] ml-4 hidden"></p>
+            </div>
           </form>
         </div>
       </div>
@@ -88,7 +92,7 @@
       </script>
     </p>
   </footer>
-  <script src="js/timestamp.js"></script>
+  <script src="js/formSubmit.js"></script>
 </body>
 
 </html>
